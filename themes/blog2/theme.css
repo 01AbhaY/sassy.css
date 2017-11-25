@@ -1,0 +1,354 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*-------------<input>-------------*/
+
+input {
+    height: 30px;
+    border: 1px solid gray;
+}
+
+
+/*-------------</input>-------------*/
+
+
+/*-------------<button reset submit>-------------*/
+
+input[type=button],
+input[type=reset],
+input[type=submit] {
+    min-width: 65px;
+    height: 35px;
+    padding: 0.5em;
+    background: white;
+    border: 1px solid gray;
+    transition: 0.3s ease-in;
+}
+textarea{
+  height: 30px;
+  border: 1px solid gray;
+}
+
+input[type=button]:hover,
+input[type=reset]:hover,
+input[type=submit]:hover {
+    color: white;
+    background: lightgray;
+    border: 1px solid gray;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+
+/*-------------</button reset submit>-------------*/
+
+
+/*-------------<checkbox>-------------*/
+
+input[type=checkbox],
+input[type=radio] {
+    width: 30px;
+}
+
+
+/*-------------</checkbox>-------------*/
+
+
+/*-------------<radio>-------------*/
+
+input[type=radio] {
+    width: 20px;
+    height: 20px;
+}
+
+
+/*-------------</radio>-------------*/
+
+
+/*-------------<color picker>-------------*/
+
+input[type=color] {
+    width: 55px;
+    height: 25px;
+}
+
+input::-webkit-color-swatch-wrapper {
+    padding: 0;
+    margin: 0;
+    background: none;
+}
+
+input::-webkit-color-swatch {
+    border: none;
+}
+
+
+/*-------------</color picker>-------------*/
+
+
+/*-------------<slider>-------------*/
+
+input[type=range] {
+    height: 30px;
+    width: 150px;
+    border: none;
+    -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    animation: 0.2s;
+    /*box-shadow: 0px 0px 0px #000000;*/
+    background: #fff;
+    border: 1px solid gray;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    margin-top: -12px;
+    border: 1px solid gray;
+    height: 30px;
+    width: 13px;
+    background: #fff;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+
+/*-------------<slider>-------------*/
+
+
+/*-------------<image>-------------*/
+
+input[type=image] {
+    line-height: 30px;
+    min-width: 60px;
+}
+
+
+/*-------------</image>-------------*/
+
+
+/*-------------<radio>-------------*/
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=datetime-local]::-webkit-inner-spin-button,
+input[type=month]::-webkit-inner-spin-button,
+input[type=time]::-webkit-inner-spin-button,
+input[type=week]::-webkit-inner-spin-button {
+    height: 100%;
+}
+
+
+/*-------------<radio>-------------*/
+
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/yQiAaD56cjx1AooMTSghGfY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Raleway', sans-serif;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+p{
+  font-family: 'Raleway', sans-serif;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.grand{
+  font-family: 'Raleway', sans-serif;
+  width:100%;
+  height:250px;
+  margin:auto;
+  background: #F0F0F0;
+}
+.grand h1{
+  font-size:50px;
+  padding-top: 45px;
+  padding-left: 30px;
+  font-weight: bolder;
+}
+.grand p{
+  font-size:30px;
+  padding-left: 30px;
+}
+/*<div class="grand">
+  <h1>This is the heading</h1>
+  <p>This is a paragraph</p>
+</div>*/
+
+/*Code for class container and container-fluid*/
+.container{
+  font-family: 'Raleway', sans-serif;
+  width: 80%;
+  margin: auto;
+  overflow: auto;
+
+}
+.container h1{
+  font-size: 40px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+/*<div class="container">
+  <h1>This is a H1 Heading.</h1>
+</div>
+*/
+.container-fluid{
+  font-family: 'Raleway', sans-serif;
+  height: 300px;
+  width: 100%;
+}
+.container-fluid h1{
+  font-size: 60px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+/*<div class="container-fluid">
+  <h1>This is a H1 Heading.</h1>
+</div>*/
+
+
+/*Editing the table*/
+table{
+    font-family: 'Raleway', sans-serif;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+table th{
+  font-weight: bold;
+  font-size: 20px;
+}
+table td{
+  border-bottom: 1px dotted black;
+  text-align: center;
+  padding: 8px;
+}
+/*<table class="table_bordered">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>*/
+
+/*Editing the bordered Table*/
+.table_bordered{
+    font-family: 'Raleway', sans-serif;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid black;
+}
+.table_bordered th{
+  font-weight: bold;
+  font-size: 20px;
+}
+.table_bordered td{
+  border-bottom: 1px solid black;
+  text-align: center;
+  padding: 8px;
+}
+/*<table class="table_bordered">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>*/
+
+/*for raw list input*/
+ul{
+    font-family: 'Raleway', sans-serif;
+}
+ul li{
+  padding:0.5em;
+  font-family: 'Raleway', sans-serif;
+}
+ol{
+    font-family: 'Raleway', sans-serif;
+}
+ol li{
+  padding:0.5em;
+  font-family: 'Raleway', sans-serif;
+}
+
+/*Editing the iframe;*/
+iframe{
+  height:100%;
+  width: 100%;
+  border: none;
+}
+
+/*Editing the code tag*/
+code{
+  background: gray;
+  color:black;
+  padding:0.3em;
+  border-radius: 2px;
+}
+
+/*Editing the pre tag*/
+pre{
+  background: #e6e6e6;
+  color:black;
+  padding: 1em;
+}

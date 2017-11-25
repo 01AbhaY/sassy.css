@@ -1,0 +1,345 @@
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Catamaran', sans-serif;
+    }
+
+    .page {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+
+    .header {
+        position: fixed;
+        width: 100%;
+        display: flex;
+        background: white;
+        z-index: +2;
+        border-bottom: 2px solid gray;
+        text-align: center;
+        font-size: 120%;
+        padding: 0.5em;
+    }
+
+    .first {
+        display: grid;
+        grid-template-rows: 2fr 3fr;
+    }
+
+    .tagLine {
+        position: absolute;
+        width: 100%;
+        top: 15%;
+        font-size: 76px;
+        font-weight: bolder;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .slider {
+        position: relative;
+    }
+
+    .slikeSlider {
+        width: 60%;
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .content {
+        margin: auto;
+    }
+
+    .slick-slide:not(.slick-center) {
+        z-index: 0;
+        transform: scale(0.8);
+    }
+
+    .slick-active.slick-center+.slick-slide+.slick-slide {
+        z-index: 1;
+    }
+
+    .slick-active.slick-center+.slick-slide,
+    .slick-center+.slick-cloned {
+        z-index: 2;
+    }
+
+    .slick-center {
+        z-index: 3;
+    }
+
+    .slick-slide {
+        position: relative;
+        transition: transform 80ms;
+        margin: 0 -190px;
+    }
+
+    .slick-slide img {
+        display: block;
+        width: 80%;
+    }
+
+    .slide img {
+        position: relative;
+        transform: translateX(-50%);
+        left: 50%;
+    }
+
+    .slick-prev {
+        left: 10% !important;
+    }
+
+    .slick-next {
+        right: 10% !important;
+    }
+
+    .logo {
+        width: 15%;
+    }
+
+    .logo h2 {
+        font-family: 'Kaushan Script', cursive;
+    }
+
+    .menuItems {
+        transform: translateY(13%);
+        width: 70%;
+        text-align: right;
+    }
+
+    .downloadButton {
+        transform: translateY(10%);
+        width: 15%;
+    }
+
+    .menuItems a {
+        padding: 0px 0.5em;
+        color: #303030;
+        text-decoration: none;
+    }
+
+    .downloadButton button {
+        width: 100px;
+        height: 35px;
+        border-radius: 2px;
+        background: white;
+        border: 1px solid gray;
+    }
+
+    .downloadButton button:hover {
+        background: #f7f7f7;
+    }
+
+    .build {
+        background: #f7f7f7;
+        padding-top: 5em;
+        padding-bottom: 7em;
+        text-align: center;
+    }
+
+    .buildElements {
+        display: -webkit-flex;
+        display: flex;
+        margin-top: 3%;
+    }
+
+    .Element {
+        text-align: center;
+        width: 40%;
+    }
+
+    .Element p {
+        text-align: justify;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 10%;
+    }
+
+    .textboxAnDimage {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+    }
+
+    .textboxAnDimageInverse {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .textbox {
+        position: relative;
+    }
+
+    .textbox h2,
+    .textbox p {
+        padding: 32px;
+    }
+
+    .text {
+        width: 100%;
+        color: #303030;
+        font-size: 150%;
+        line-height: 150%;
+    }
+
+    .text1 {
+        width: 100%;
+        color: #303030;
+        font-size: 120%;
+        line-height: 150%;
+    }
+
+    .image {
+        position: relative;
+    }
+
+    .image img {
+        width: 90%;
+        box-shadow: -5px 5px 8px gray;
+        border-radius: 2px;
+    }
+
+    .developerINFO {
+        display: grid;
+        grid-template-rows: 1fr;
+        background: url(../assets/devBackground.png) no-repeat;
+        background-size: cover;
+    }
+
+    .developer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .developerCard {
+        text-align: center;
+        position: relative;
+    }
+
+    .card {
+        padding: 1em;
+        width: 400px;
+        height: 100%;
+        max-height: 580px;
+        background: rgba(255, 255, 255, 0.8);
+        box-shadow: 0px 0px 20px gray;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .chinmay {
+        right: 5%;
+    }
+
+    .abhay {
+        left: 5%;
+    }
+
+    .developer img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+
+    .developer ul {
+        list-style: none;
+        padding: 1em;
+    }
+
+    .developer ul li {
+        padding: 0.5em;
+    }
+
+    .footer {
+        display: flex;
+        margin: 2em 0em;
+    }
+
+    .footerSection1 {
+        position: relative;
+        width: 35%;
+    }
+
+    .footerSection1 p {
+        color: #58402c;
+        margin-top: 40px;
+        font-weight: lighter;
+        padding: 50px;
+        font-size: 20px;
+    }
+
+    .footerSection2 {
+        display: flex;
+        width: 65%;
+        justify-content: space-evenly;
+    }
+
+    .footerList {
+        width: 12%;
+    }
+
+    .footerList ul {
+        margin-top: 80px;
+        list-style: none;
+    }
+
+    .footerList ul li {
+        padding: 0.5em;
+    }
+
+    .footerList ul li a {
+        text-decoration: none;
+        color: #737373;
+        text-align: justify;
+    }
+
+    .footerList ul li a:hover {
+        color: #58402c;
+    }
+
+    .list_heading {
+        font-weight: normal;
+        font-size: 20px;
+        color: #58402c;
+        border-bottom: 2px solid gray;
+    }
+
+    .list_content {
+        font-weight: lighter;
+        padding: 10px;
+    }
+
+    .btn {
+        width: 100px;
+        height: 35px;
+        border-radius: 2px;
+        background: #1aa3ff;
+        color: white;
+        border: 0px;
+        margin-left: 10%;
+    }
+    .btn a{
+      text-decoration: none;
+      color: white;
+    }
+
+    .sassyLogo {
+        margin-top: 20%;
+        margin-left: 38%;
+    }

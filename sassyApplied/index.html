@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="./theme.css" rel="stylesheet">
+    <title>Document</title>
+    <script>
+        function deleteCss() {
+            var element = document.getElementsByTagName("link"),
+                index;
+
+            for (index = element.length - 1; index >= 0; index--) {
+                element[index].parentNode.removeChild(element[index]);
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <fieldset>
+        <legend>Buttons:</legend>
+        <input type="button" class="button" value="Click here to check the Difference!" onclick="deleteCss()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="button" class="button" value="Reload the Page!" onClick="window.location.reload()">
+    </fieldset>
+
+    <fieldset>
+        <legend>Buttons:</legend>
+        <input type="button" class="button" value="small">&nbsp;&nbsp;&nbsp;
+        <input type="button" class="button" value="medium btn">&nbsp;&nbsp;&nbsp;
+        <input type="button" class="button" value="laaaaaaaaarge button">&nbsp;&nbsp;&nbsp;
+    </fieldset>
+
+    <fieldset>
+        <legend>Date and time:</legend>
+        <input type="date">&nbsp;&nbsp;&nbsp;Date<br/><br/>
+        <input type="datetime-local">&nbsp;&nbsp;&nbsp;Datetimelocal<br/><br/>
+        <input type="week">&nbsp;&nbsp;&nbsp;week<br/><br/>
+        <input type="datetime">&nbsp;&nbsp;&nbsp;Datetime(m/c readable only)<br/><br/>
+        <input type="month">&nbsp;&nbsp;&nbsp;Month<br/><br/>
+        <input type="time">&nbsp;&nbsp;&nbsp;time<br/><br/>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Commonly used Input tags:</legend>
+        <input type="text">&nbsp;&nbsp;&nbsp;text<br/><br/>
+        <input type="email">&nbsp;&nbsp;&nbsp;Email<br/><br/>
+        <input type="number">&nbsp;&nbsp;&nbsp;number<br/><br/>
+        <input type="password">&nbsp;&nbsp;&nbsp;Password<br/><br/>
+        <input type="tel">&nbsp;&nbsp;&nbsp;tel<br/><br/>
+        <input type="url">&nbsp;&nbsp;&nbsp;url<br/><br/>
+        <input type="file">&nbsp;&nbsp;&nbsp;File<br/><br/>
+        <input type="submit">&nbsp;&nbsp;&nbsp;submit<br/><br/>
+    </fieldset>
+
+    <fieldset>
+        <legend>Other Input tags:</legend>
+        <input type="search">&nbsp;&nbsp;&nbsp;search<br/><br/>
+        <input type="image" alt="Submit">&nbsp;&nbsp;&nbsp;Image<br/><br/>
+        <input type="range">&nbsp;&nbsp;&nbsp;Range<br/><br/>
+        <input type="reset">&nbsp;&nbsp;&nbsp;reset<br/><br/>
+        <input type="checkbox">&nbsp;&nbsp;&nbsp;Checkbox<br/><br/>
+        <input type="color">&nbsp;&nbsp;&nbsp;Color picker<br/><br/>
+        <input type="radio">&nbsp;&nbsp;&nbsp;Radio<br/><br/>
+    </fieldset>
+
+    <fieldset>
+        <legend>Heading and Paragraph:</legend>
+        <h1>This is a H1 Heading.</h1>
+        <h2>This is a H2 Heading.</h2>
+        <h3>This is a H3 Heading.</h3>
+        <h4>This is a H4 Heading.</h4>
+        <h5>This is a H5 Heading.</h5>
+        <h6>This is a H6 Heading.</h6>
+        <br/><br/><br/>
+        <h2>This is a H2 Heading.</h2>
+        <p>
+            This is a paragraph. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nam asperiores autem? Veniam eaque libero maiores necessitatibus? Autem vero neque eum illum adipisci, maiores impedit perferendis blanditiis quisquam veniam at.
+        </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Tables:</legend>
+
+        <table>
+            <caption>
+                This is a HTML table.
+            </caption>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+            </tr>
+        </table>
+
+        <br/><br/><br/>
+
+        <table class="table_bordered">
+            <caption>
+                This is a bordered table.
+            </caption>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+            </tr>
+        </table>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>pre and code:</legend>
+        <pre>
+            Hello Bro
+            This is
+            a pre tag.
+        </pre>
+        <br/><br/><br/>
+        <pre>
+            <code>
+            ?php
+            $user_posts = mysqli_query($connect, "SELECT * FROM {$user_id}_posts");
+            $no_of_posts = count($user_posts);
+        
+            while ($row = mysqli_fetch_array($user_posts)) {
+        
+                $post_id = $row['post_id'];
+                $card_type = $row['post_type'];
+                $time = $row['time'];
+                $content = $row['content'];
+                $upvotes = $row['upvotes'];
+                $downvotes = $row['downvotes'];
+                ?
+            </code>
+        </pre>
+    </fieldset>
+
+</body>
+
+</html>

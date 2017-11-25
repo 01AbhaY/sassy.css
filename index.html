@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sassy</title>
+    <link rel="icon" href="assets/title.png" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://use.fontawesome.com/078580666a.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link href="http://cdn.jsdelivr.net/jquery.slick/1.5.5/slick.css" rel="stylesheet" />
+    <link href="http://cdn.jsdelivr.net/jquery.slick/1.5.5/slick-theme.css" rel="stylesheet" />
+    <script src="http://cdn.jsdelivr.net/jquery.slick/1.5.5/slick.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Satisfy" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header" class="container-fluid">
+        <div class="logo">
+            <h2>Sassy.CSS</h2>
+        </div>
+        <div class="menuItems">
+            <a href="#1">Home</a>
+            <a href="#7">Why?</a>
+            <a href="#2">Themes</a>
+            <a href="#3">Documentation</a>
+            <a href="#4">Github</a>
+            <a href="#5">Developers</a>
+            <a href="#6">More</a>
+        </div>
+        <div class="downloadButton">
+            <button>Download</button>
+        </div>
+    </div>
+    <div class="page first" id="1">
+        <div>
+            <div class="tagLine">NO <span style="color: orange">
+                Classes</span> NO <span style="color: orange">Extra Code</span>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="slikeSlider">
+                <div class="content">
+                    <div class="slikeCenter">
+                        <div>
+                            <div class="slide">
+                                <img src="assets/blog1.PNG" />
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide">
+                                <img src="assets/blog2.PNG" />
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide">
+                                <img src="assets/garage.PNG" />
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slide">
+                                <img src="assets/portfolio_1.PNG" />
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="slide">
+                                <img src="assets/ghost.PNG" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $('.slikeCenter').slick({
+            centerMode: true,
+            variableWidth: true,
+            arrows: true,
+            infinite: true,
+            slidesToShow: 1,
+            speed: 500,
+            dots: true,
+            autoplay: true,
+        });
+    </script>
+
+    <div class="build text1" id="7">
+        <h2>Why we built Sassy.CSS ?</h2><br><br>
+        <div class="buildElements">
+            <div class="Element">
+                <i class="fa fa-code fa-5x" aria-hidden="true"></i>
+                <h4>Reduced Code</h4>
+                <p>Your work for coding seperate CSS stylesheet is finished your our CSS stylesheet. All you need to use are classes and that's it.</p>
+            </div>
+            <div class="Element">
+                <i class="fa fa-css3 fa-5x" aria-hidden="true"></i>
+                <h4>Raw CSS</h4>
+                <p>You dont even need to write any css code, just import our CSS file into your html doc and feel the change.</p>
+            </div>
+            <div class="Element">
+                <i class="fa fa-plug fa-5x" aria-hidden="true"></i>
+                <h4>Plugins</h4>
+                <p>Use our different plugins of different elements and import them into your design to make it look more beautiful.</p>
+            </div>
+            <div class="Element">
+                <i class="fa fa-smile-o fa-5x" aria-hidden="true"></i>
+                <h4>Satisfaction</h4>
+                <p>Our priority is satisfaction, our framework provides a full satisfaction to the users by its beautiful design and features.</p>
+            </div>
+        </div>
+    </div>
+    <div class="page textboxAnDimage" id="2">
+        <div class="textbox">
+            <div class="center text">
+                <h2>Themes &nbsp;<i class="fa fa-laptop fa-2x" aria-hidden="true"></i></h2>
+                <p>We provide the most latest and beautiful themes currently demanded, these designs are demanded by everyone in the market.<br><br>Check out the themes of different sections and use them in your document.
+                </p>
+                <button class="btn"><a href="./themes/examples.html">Check out</a></button>
+            </div>
+        </div>
+        <div class="image">
+            <img src="assets/dashy.png" class="center">
+        </div>
+    </div>
+    <div class="page textboxAnDimageInverse" id="3" style=" background: #f7f7f7;">
+        <div class="image">
+            <img src="assets/cody.PNG" class="center">
+        </div>
+        <div class="textbox">
+            <div class="center text">
+                <h2>Docs &nbsp; <i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i></h2>
+                <p>Get started with us, check out our Documentation and start using our css file to make your web template look more beautiful.</p>
+                <button class="btn"><a href="./documentaion/docs.html">Get Started</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="page textboxAnDimage" id="4">
+        <div class="textbox">
+            <div class="center text">
+                <h2>Github &nbsp; <i class="fa fa-code-fork fa-2x" aria-hidden="true"></i></h2>
+                <p>Fork us on GitHub and contribute to our sassy.css file. Your contribution is admired.</p>
+                <button class="btn"><a href="https://github.com/01AbhaY/sassy.css">Fork</a></button>
+            </div>
+        </div>
+        <div class="image">
+            <img src="assets/deploy.png" class="center">
+        </div>
+    </div>
+    <div class="page  developerINFO" id="5">
+        <div class="developer">
+            <div class="developerCard">
+                <div class="card chinmay">
+                    <div class="center info">
+                        <img src="assets/chinu.png" alt="chinmay" class="info" />
+                        <ul>
+                            <li>
+                                <h2>Chinmay Tripathi</h2>
+                            </li>
+<!--
+                            <li>
+                                <h4>Founder OSlab.in</h4>
+                            </li>
+-->
+                            <li>Data Science &amp; Machine Learning</li>
+                            <li>Full Stack Developer</li>
+                            <li>Android Developer (Kivy)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="developerCard">
+                <div class="card abhay">
+                    <div class="center info">
+                        <img src="assets/abhay.jpg" alt="abhay" />
+                        <ul>
+                            <li>
+                                <h2>Abhay Pratap Singh</h2>
+                            </li>
+<!--
+                            <li>
+                                <h4>Founder OSlab.in</h4>
+                            </li>
+-->
+                            <li>Full Stack WAMP Developer</li>
+                            <li>Java Programmar</li>
+                            <li>Social media marketing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer" id="6">
+        <div class="footerSection1">
+            <div class="center" style="width: 90%">
+                <img class="../assets/assyLogo" src="assets/sassylogo.png" alt="LOGO" />
+                <p style="padding: 1em; padding-top:0px;">
+                    OSlab.in is a firm that believes in completing and conquering everyone's aspirations and admires there calliber towards working and solving the problem optimaly.
+                </p>
+            </div>
+        </div>
+        <div class="footerSection2">
+            <div class="footerList">
+                <ul>
+                    <li class="list_heading">Blog</li>
+                    <li class="list_contents"><a href="">Feedback</a></li>
+                    <li class="list_contents"><a href="">Surveys</a></li>
+                    <li class="list_contents"><a href="">Praise</a></li>
+                    <li class="list_contents"><a href="">Schedules</a></li>
+                    <li class="list_contents"><a href="">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="footerList">
+                <ul>
+                    <li class="list_heading">About</li>
+                    <li class="list_contents"><a href="">About</a></li>
+                    <li class="list_contents"><a href="">Terms &amp; Privacy</a></li>
+                    <li class="list_contents"><a href="">Help Center</a></li>
+                    <li class="list_contents"><a href="">Blog</a></li>
+                    <li class="list_contents"><a href="">Digest</a></li>
+                </ul>
+            </div>
+            <div class="footerList">
+                <ul>
+                    <li class="list_heading">Connect</li>
+                    <li class="list_contents"><a href="">Contact us</a></li>
+                    <li class="list_contents"><a href="">Twitter</a></li>
+                    <li class="list_contents"><a href="">Facebook</a></li>
+                    <li class="list_contents"><a href="">LinkedIn</a></li>
+                    <li class="list_contents"><a href="">Google</a></li>
+                </ul>
+            </div>
+            <div class="footerList">
+                <ul>
+                    <li class="list_heading">Sassy&nbsp;CSS</li>
+                    <li class="list_contents"><a href="">Documentation</a></li>
+                    <li class="list_contents"><a href="">Reference</a></li>
+                    <li class="list_contents"><a href="">Themes</a></li>
+                    <li class="list_contents"><a href="">Plugins</a></li>
+                    <li class="list_contents"><a href="">Examples</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div style="text-align: center;font-size: 150%; margin: 1em 0em;">Copyright&copy; OSlab</div>
+</body>
+
+</html>

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sassy</title>
+    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+    <link rel="icon" href="../assets/title.png" />
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Catamaran', sans-serif;
+        }
+
+        .container {
+            display: -webkit-flex;
+            display: flex;
+            height: 100vh;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .menu {
+            width: 20%;
+            height: 100%;
+            overflow: scroll;
+        }
+
+        ::-webkit-scrollbar {
+            width: 0.2em;
+            background: white;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #1aa3ff;
+        }
+
+        .menu button {
+            display: block;
+            background-color: inherit;
+            color: #1aa3ff;
+            padding: 22px 16px;
+            width: 100%;
+            border: none;
+            outline: none;
+            text-align: left;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .description {
+            width: 80%;
+        }
+
+        .docs {
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+
+        .docs h3 {
+            font-size: 50px;
+            padding: 10px;
+            font-weight: lighter;
+        }
+
+        .docs h4 {
+            font-size: 20px;
+            padding: 5px;
+            padding-left: 10px;
+        }
+
+        .docs p {
+            padding: 5px;
+            padding-left: 10px;
+            padding-right: 70px;
+            text-align: justify;
+        }
+
+        .menu button:hover {
+            background: #ccebff;
+        }
+
+        .header {
+            position: fixed;
+            width: 100%;
+            display: flex;
+            background: white;
+            z-index: +2;
+            border-bottom: 2px solid gray;
+            text-align: center;
+            font-size: 120%;
+            padding: 0.5em;
+        }
+
+        .logo {
+            width: 15%;
+        }
+
+        .logo h2 {
+            font-family: 'Kaushan Script', cursive;
+        }
+
+        .menuItems {
+            transform: translateY(13%);
+            width: 70%;
+            text-align: right;
+        }
+
+        .downloadButton {
+            transform: translateY(10%);
+            width: 15%;
+        }
+
+        .menuItems a {
+            padding: 0px 0.5em;
+            color: #303030;
+            text-decoration: none;
+        }
+
+        .downloadButton button {
+            width: 100px;
+            height: 35px;
+            border-radius: 2px;
+            background: white;
+            border: 1px solid gray;
+        }
+
+        .downloadButton button:hover {
+            background: #f7f7f7;
+        }
+
+    </style>
+    <script type="text/javascript">
+        function openElement(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("docs");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <div class="header" class="container-fluid">
+        <div class="logo">
+            <h2>Sassy.CSS</h2>
+        </div>
+        <div class="menuItems">
+            <a href="../index.html#1">Home</a>
+            <a href="../index.html#7">Why?</a>
+            <a href="../index.html#2">Themes</a>
+            <a href="../index.html#3">Documentation</a>
+            <a href="../index.html#4">Github</a>
+            <a href="../index.html#5">Developers</a>
+            <a href="../index.html#6">More</a>
+        </div>
+        <div class="downloadButton">
+            <button>Download</button>
+        </div>
+    </div>
+
+<div style="height: 62px;"></div>
+
+    <div class="container">
+        <div class="menu">
+            <button class="tablinks" onclick="openElement(event, 'get_started')">Get Started</button>
+            <button class="tablinks" onclick="openElement(event, 'container')">Containers</button>
+            <button class="tablinks" onclick="openElement(event, 'grand')">Grand</button>
+            <button class="tablinks" onclick="openElement(event, 'heading')">Heading</button>
+            <button class="tablinks" onclick="openElement(event, 'paragraphs')">Paragraphs</button>
+            <button class="tablinks" onclick="openElement(event, 'images')">Images</button>
+            <button class="tablinks" onclick="openElement(event, 'table')">Table</button>
+            <button class="tablinks" onclick="openElement(event, 'list')">List</button>
+            <button class="tablinks" onclick="openElement(event, 'elements')">Elements</button>
+            <button class="tablinks" onclick="openElement(event, 'iframe')">IFrame</button>
+            <button class="tablinks" onclick="openElement(event, 'forms')">Forms</button>
+            <button class="tablinks" onclick="openElement(event, 'buttons')">Buttons</button>
+            <button class="tablinks" onclick="openElement(event, 'alerts')">Alerts</button>
+            <button class="tablinks" onclick="openElement(event, 'badges')">Badges</button>
+            <button class="tablinks" onclick="openElement(event, 'cards')">Cards</button>
+            <button class="tablinks" onclick="openElement(event, 'pagination')">Pagination</button>
+            <button class="tablinks" onclick="openElement(event, 'Footer')">Footer</button>
+            <button class="tablinks" onclick="openElement(event, 'navbar')">Navbar</button>
+            <button class="tablinks" onclick="openElement(event, 'preloader')">Preloader</button>
+            <button class="tablinks" onclick="openElement(event, 'reference')">Reference</button>
+        </div>
+        <div class="description">
+            <div id="get_started" class="docs" style="display: block;">
+                <h3>Get Started</h3>
+                <h4>Get started with Sassy.css and build beautiful web pages with ease.</h4>
+                <br>
+                <p>Start Developing your web templates with the help of latest CSS stylesheet we are providing. It has got various html elements styled in its own way which makes your html document look more beautiful and attractive. You just have to import our CSS stylesheet into your HTML Doc and that's it, keep coding and using our classes and rest of the work will be done by our CSS seet.
+                    <br>
+                    <h4>What is Sassy?</h4>
+                    <p>
+                        <br>->Sassy is a front-end framework for faster and easier web development.
+                        <br>->Sassy includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals, image carousels and many other, as well as optional JavaScript plugins
+                        <br>->Sassy also gives you the ability to easily create responsive template designs</p>
+                    <br>
+                    <h4>Why Use Sassy?</h4>
+
+                    <p>1.Easy to use: Anybody with just basic knowledge of HTML and CSS can start using Sassy.
+                        <br>2.Responsive features: Sassy's responsive CSS adjusts to desktops.it a fully response
+                        <br>3.Browser compatibility: Sassy is compatible with all modern browsers (Chrome, Firefox, Internet Explorer, Safari, and Opera).
+                    </p>
+
+                    <br>
+                    <h4>Where to Get Sassy?</h4>
+
+                    <p>There are three ways to start using Sassy on your own web site.
+
+                        <br>You can:
+
+                        <br>1.Download Sassy from oslab.in/sassy/
+                        <br>2.Include Sassy from a CDN.
+                        <br>3.NPM install Sassy
+
+
+                        <h4>Sassy CDN</h4>
+                        <p>If you don't want to download and host Sassy yourself, you can include it from a CDN (Content Delivery Network). MaxCDN provides CDN support for Sassy's CSS and JavaScript. You must also include jQuery:
+                        </p>
+                        <br>
+            </div>
+
+            <div id="container" class="docs">
+                <h3>Containers</h3>
+                <p>Sassy also requires a containing element to wrap site contents.
+
+                    <br>There are two container classes to choose from:
+                    <br>
+                    <br>The <b>.container</b> class provides a responsive fixed width container
+                    <br>The <b>.container-fluid</b> class provides a full width container, spanning the entire width of the viewport
+                    <br><br><br>
+                    <img src="content.png" alt="container" />
+                    <br> Note: Containers are not nestable (you cannot put a container inside another container).
+                    <br>
+                    <br> Two Basic Sassy Pages<br> 1.The following example shows the code for a basic Sassy page (with a responsive fixed width container): ex-
+                    <br>
+                    <br>
+                    <img src="container-fluid.png" alt="container" />
+                    <br>
+                    <br> 2.The following example shows the code for a basic Sassy page (with a full width container): eg:
+                    <br>
+                    <br>
+                    <img src="container.png" alt="container" />
+                    <br><br>
+                    <p><b>Sample Code:</b></p>
+                    <br>
+                    <img src="container-demo.png" alt="container" />
+                    <br><br><br>
+            </div>
+
+            <div id="grand" class="docs">
+                <h3>Grand</h3>
+                <img style="width:90%;" src="grand.png" alt="container" />
+            </div>
+
+            <div id="heading" class="docs">
+                <h3>Headings</h3>
+                Headings are defined with the <b>&lth1&gt</b> to <b>&lth6&gt</b> tags.
+                <br>
+                <br>
+                <b>&lth1&gt</b> defines the most important heading. <b>&lth6&gt</b> defines the least important heading.
+                <br>
+                <br>
+                <h1>Heading 1</h1><br>
+                <h2>Heading 2</h2><br>
+                <h3>Heading 3</h3><br>
+                <h4>Heading 4</h4><br>
+                <h5>Heading 5</h5><br>
+                <h6>Heading 6</h6>
+                <br>
+                <br>
+
+
+                <p>Headings Are Important Search engines use the headings to index the structure and content of your web pages. Users skim your pages by its headings. It is important to use headings to show the document structure.
+                    <br>
+                    <b>&lth1&gt</b> headings should be used for main headings, followed by <b>&lth2&gt</b> headings, then the less important <b>&lth3&gt</b>, and so on.
+                    <br> Note: Use Sassy headings for headings only. Don't use headings to make text BIG or bold.
+                    <br> Bigger Headings<br> Each Sassy heading has a default size. However, you can specify the size for any heading with the style attribute.
+                    <p>
+                        <br>
+                        <img src="heading.png" alt="container" /><img style="float:right;" src="headinglist.png" alt="container" />
+
+
+            </div>
+
+            <div id="paragraphs" class="docs">
+                <h3>Paragraph</h3>
+                <p>The HTML <b>&ltp&gt</b> element defines a paragraph:
+                    <br> Example
+                    <p>This is a paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quo, nostrum laudantium ipsa nam nulla! Voluptatum, minima quasi praesentium beatae dolores architecto impedit perspiciatis et doloribus. Deleniti unde facere sapiente! In aliquid sunt fugit, autem natus doloremque ratione dolor esse architecto rerum unde, officiis tempora tenetur accusantium ullam voluptatum nulla. </p>
+                    <br>
+            </div>
+
+            <div id="images" class="docs">
+                <h3>Images</h3>
+                <p><b>Rounded Corners:</b><br> The .img-rounded class adds rounded corners to an image:
+                    <br> Example:
+                    <br> &ltimg src="acb.jpg" class="img-rounded" alt="--" width="304" height="236"&gt
+                    <br>
+                    <img src="imgrounded.png" alt="container" />
+                    <br><br><br>
+                    <b>Circle:</b>
+                    <br>
+                    <img src="imgcircle.png" alt="container" />
+                    <br> Example:
+                    <br> &ltimg src="ebu.jpg" class="img-circle" alt="----" width="304" height="236"&gt
+                    <br><br><br>
+                    <b>Thumbnail:</b>
+                    <br> The .img-thumbnail class shapes the image to a thumbnail:
+                    <br>
+                    <img src="imgthumbnail.png" alt="container" />
+                    <br> Example:
+                    <br> &ltimg src="ebu.jpg" class="img-thumbnail" alt="----" width="304" height="236"&gt
+                    <br><br>
+                    <br> Responsive Images Images come in all sizes. So do screens. Responsive images automatically adjust to fit the size of the screen. Create responsive images by adding an .img-responsive class to the &ltimg&gt tag. The image will then scale nicely to the parent element.
+                    <br> The .img-responsive class applies display: block; and max-width: 100%; and height: auto; to the image.
+                </p>
+                <br><br>
+            </div>
+
+            <div id="table" class="docs">
+                <h3>Table</h3>
+                <p>A basic Sassy table has a light padding and only horizontal dividers.
+                    <br> The .table class adds basic styling to a table:
+                    <br> Example
+                    <br>
+                    <br><br> ---Striped Rows<br> The .table-striped class adds zebra-stripes to a table:
+                    <br>
+                    <img src="table1.png" alt="container" />
+                    <br>
+                    <br> ----Bordered Table<br> The .table-bordered class adds borders on all sides of the table and cells:
+                    <br>
+                    <img src="table2.png" alt="container" />
+                    <br>
+                </p>
+            </div>
+
+            <div id="list" class="docs">
+                <h3>List</h3>
+                <p>Read it.</p>
+            </div>
+
+            <div id="elements" class="docs">
+                <h3>Elements</h3>
+                <p>Read it.</p>
+            </div>
+
+            <div id="iframe" class="docs">
+                <h3>IFrame</h3>
+                <p>Read it.</p>
+            </div>
+
+            <div id="forms" class="docs">
+                <h3>Forms</h3>
+                <p>Read it.</p>
+            </div>
+
+            <div id="buttons" class="docs">
+                <h3>Buttons</h3>
+                <p>Read it.</p>
+            </div>
+
+            <div id="alerts" class="docs">
+                <h3>Alerts</h3>
+                <p>Read it.</p>
+            </div>
+
+            <div id="badges" class="docs">
+                <h3>Badges</h3>
+                <p>Read it.</p>
+            </div>
+
+            <div id="cards" class="docs">
+                <h3>Cards</h3>
+                <p>Read it.</p>
+            </div>
+
+            <div id="pagination" class="docs">
+                <h3>Pagination</h3>
+                <p>Read it.</p>
+                <center><img src="page1.png" alt="style1" /></center>
+                <br>
+                <center><img src="page1ss.png" alt="style1" /></center>
+                <br>
+                <br>
+                <center><img src="page2.png" alt="style1" /></center>
+                <br>
+                <center><img src="page1ss.png" alt="style1" /></center>
+                <br>
+                <br>
+            </div>
+
+            <div id="Footer" class="docs">
+                <h3>Footer</h3>
+                <p>Read it.</p>
+            </div>
+
+            <div id="navbar" class="docs">
+                <h3>Navbar</h3>
+                <p>Read it.</p>
+            </div>
+
+            <div id="preloader" class="docs">
+                <h3>Preloader</h3>
+                <p>Read it.</p>
+            </div>
+
+            <div id="reference" class="docs">
+                <h3>Reference</h3>
+                <p>Read it.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
